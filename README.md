@@ -186,6 +186,36 @@ userAgeList.Clear(); // removes all elements from list
 
 ## Making Programs Interactive
 ```c#
+// To display messages to our users, use Write() or WriteLine()
+
+Console.WriteLine("Hello ");
+Console.WriteLine("How are you?");
+/* We get:
+Hello
+How are you?*/
+
+Console.Write("Hello ");
+Console.Write("How are you?");
+/* We get:
+Hello How are you?*/
+
+// Example 1: Strings
+Console.WriteLine("Hello, how are you?");
+// Output = Hello, how are you?
+
+// Example 2: Int
+int userAge = 30;
+Console.WriteLine(userAge);
+// Output = 30
+
+// Example 3: Concatenate
+Console.WriteLine("Hello, " + "how are you?" + " I love C#.");
+// Output = Hello, how are you? I love C#.
+
+// Example 4: Concatenate Strings and Variables
+int results = 79;
+Console.WriteLine("You scored " + results + " points on your test!");
+// Output = You scored 79 points on your test!
 
 ```
 
