@@ -142,7 +142,7 @@ string [] substrings = names.Split(seperator, StringSplitOptions.None);
 /* Line 1: first declare an array of two strings to act as seperators
 Line 2: assign the string we want to split
 Line 3: we use the names var to call the Split() method
-The result: {"Peter", "John", "Andy", "", "David"}
+The result: {"Peter", "John", "Andy", "", "David"} */
 ```
 ### Lists
 ```c#
