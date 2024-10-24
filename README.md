@@ -146,6 +146,40 @@ The result: {"Peter", "John", "Andy", "", "David"} */
 ```
 ### Lists
 ```c#
+// Lists: Similar to Arrays, but elements can be added or removed at will.
+List<int> userAgeList = new List<int>();
+List<int> userAgeList = new List<int> {11, 21, 31, 41};
+
+// To access elements,  use the same notation as array
+userAgeList[2] // 2 is the index of the element, which is 31.
+
+// List Properties and Methods
+
+// Add()
+userAgeList.Add(51);
+userAgeList.Add(61);
+// userAgeList now has 6 numbers {11, 21, 31, 41, 51, 61}
+
+// Count
+userAgeList.Count; // = 6 numbers
+
+// Insert()
+userAgeList.Insert(2, 51);
+//userAgeList now becomes {11, 21, 51, 31, 41, 51, 61}
+
+// Remove()
+userAgeList.Remove(51); // removes the first instance of 51
+// userAgeList now becomes {11, 21, 31, 41, 51, 61}
+
+// RemoveAt()
+userAgeList.RemoveAt(3); // this removes the 4th element at index 3
+// userAgeList now becomes {11, 21, 31, 51, 61}
+
+// Contains()
+userAgeList.Contains(51); // results as true
+
+// Clear()
+userAgeList.Clear(); // removes all elements from list
 
 ```
 
