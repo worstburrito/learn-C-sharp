@@ -59,6 +59,46 @@ int x = (int) 20.9; // Type casting 20.9 into an int results in 20.9 turning int
 
 ## Arrays, Strings, Lists
 ```c#
+// Array: collection of related data
+int[] userAge = {21, 22, 23, 24, 25};
+
+// Declare then Initialize:
+int[] userAge2
+userAge2 = new [] {21, 22, 23, 24, 25};
+
+// Declaure and initialize with default values:
+int[] userAge3 = new int[5];
+// This becomes {0, 0, 0, 0, 0}
+
+// Update individual values
+userAge[0] = 31;
+// The array now becomes: {31, 22, 23, 24, 25}
+
+// If you type:
+userAge[2] = userAge[2] + 20;
+// The array now becomes: {31, 22, 43, 24, 25}
+
+// Array Properties and Methods
+
+// Length
+int [] userAge = {21, 22, 26, 32, 40};
+userAge.Length // is equal to 5 for the 5 numbers in the array
+
+// Copy()
+int [] source = {12, 1, 5, -2, 16, 14};
+int [] dest = {1, 2, 3, 4};
+Array.Copy(source, dest, 3); // dest now becomes {12, 1, 5, 4}
+
+// Sort()
+int [] numbers = {12, 1, 5, -2, 16, 14};
+Array.Sort(numbers);
+// numbers now becomes {-2, 1, 5, 12, 14, 16}
+
+// IndexOf()
+int [] numbers = {10, 30, 44, 21, 51, 21, 61, 24, 14};
+int ans = Array.IndexOf(numbers, 21); // ans = 3 because that's where 21 is
+
+ans = Array.IndexOf(numbers, 100); // ans = -1 because 100 doesn't exist
 
 ```
 
