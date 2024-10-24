@@ -58,6 +58,8 @@ int x = (int) 20.9; // Type casting 20.9 into an int results in 20.9 turning int
 ```
 
 ## Arrays, Strings, Lists
+
+### Arrays
 ```c#
 // Array: collection of related data
 int[] userAge = {21, 22, 23, 24, 25};
@@ -99,6 +101,51 @@ int [] numbers = {10, 30, 44, 21, 51, 21, 61, 24, 14};
 int ans = Array.IndexOf(numbers, 21); // ans = 3 because that's where 21 is
 
 ans = Array.IndexOf(numbers, 100); // ans = -1 because 100 doesn't exist
+```
+
+### Strings
+```c#
+// Strings: a piece of text, "Hello World"
+string message = "Hello World";
+
+// Assign empty string to a variable
+string anotherMessage = "";
+
+// Concatenating Strings
+string myName = "Hello World, " + "my name is Jamie";
+
+// String Properties and Methods
+
+// Length
+"Hello World".Length // this equals 11, and counts the space
+
+//Substring()
+string message = "Hello World";
+string newMessage = message.Substring(2, 5); // this equals "llo W"
+
+// Equals()
+string firstString = "This is Jamie";
+string secondString = "Hello";
+
+firstString.Equals("This is James"); // returns true
+firstString.Equals(secondString); // returns false
+
+// Split()
+/* Requires two arguments - an array os strings to act as separators
+and a second argument to specific whether you want to remove empty
+strings from the result. */
+
+string [] seperator = {", ", "; "};
+string names = "Peter, John; Andy, , David";
+string [] substrings = names.Split(seperator, StringSplitOptions.None);
+
+/* Line 1: first declare an array of two strings to act as seperators
+Line 2: assign the string we want to split
+Line 3: we use the names var to call the Split() method
+The result: {"Peter", "John", "Andy", "", "David"}
+```
+### Lists
+```c#
 
 ```
 
