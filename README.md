@@ -217,7 +217,37 @@ int results = 79;
 Console.WriteLine("You scored " + results + " points on your test!");
 // Output = You scored 79 points on your test!
 
+// Example 5: Concatenate Strings and Variables + Placeholders
+int results = 79;
+Console.WriteLine("{0}! You scored {1} points on your test!", "Good morning", results);
+// Output = Good morning! You scored 79 points on your test!
+
+Console.WriteLine("Deposit = {0:C}. Account balance is {1:C}.", 2125, 12345.678);
+// Output = Deposit = $2,125.00. Account balance is $12,345.68.
+
+// Example 6: Print the result of a method.
+Console.WriteLine("Hello World".Length);
+// Output = 11
+
+// Escape Sequences
+Console.WriteLine("Hello\tWorld");
+// Output = Hello   World
+
+Console.WriteLine("Hello\nWorld");
+/* Output = Hello
+World */
+
+Console.WriteLine("\\");
+// Output = \
+
+Console.WriteLine("I am 5'9\" tall");
+// Output = I am 5'9" tall
+
+// Accepting User Input
+
+
 ```
+
 
 
 ## Title
