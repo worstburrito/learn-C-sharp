@@ -272,6 +272,15 @@ Console.Read();
 
 ## Making Choices and Decisions
 ```c#
+/* Comparison Operators
+Equals ==
+Does Not Equal !=
+Greater Than >
+Smaller Than <
+Greater Than or Equal To >=
+Smaller Than or Equal To <=
+And &&
+Or || */
 
 ```
 
