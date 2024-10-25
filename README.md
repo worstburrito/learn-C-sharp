@@ -282,6 +282,82 @@ Smaller Than or Equal To <=
 And &&
 Or || */
 
+// Example 1
+int userAge;
+
+Console.Write("Please enter your age: ");
+userAge = Convert.ToInt32(Console.ReadLine());
+
+if (userAge < 0 || userAge > 100)
+{
+    Console.WriteLine("Invalid Age");
+    Console.WriteLine("Age must be between 0 and 100");
+}
+
+else if (userAge < 18)
+    Console.WriteLine("Sorry you are underage");
+
+else if (userAge < 21)
+    Console.WriteLine("You need parental consent");
+
+else
+{
+    Console.WriteLine("Congratulations!");
+    Console.WriteLine("You may sign up for the event!");
+}
+
+Console.Read();
+
+// Inline If
+// Syntax: condition ? value if condition is true : value if condition is false;
+3 > 2 ? 10 : 5;
+// Output = 10, since 3 is greater than 2
+
+// Switch Statement
+/* Syntax:
+swtich (variable used for swtiching)
+{
+    case firstCase:
+        do A;
+        break (or other jump statements);
+
+    case secondCase:
+        do B;
+        break (or other jump statements);
+
+    case default:
+        do C;
+        break (or other jump statements);
+}
+*/
+
+// Example 2
+Console.Write("Enter your grade: ");
+string userGrade = Console.ReadLine();
+
+switch (userGrade)
+{
+    case "A+":
+    case "A":
+            Console.WriteLine("Distinction");
+        break;
+
+    case "B":
+        Console.WriteLine("B Grade");
+        break;
+
+    case "C":
+        Console.WriteLine("C Grade");
+        break;
+
+    default:
+        Console.WriteLine("Fail");
+        break;
+}
+
+Console.Read();
+
+
 ```
 
 ## Title
