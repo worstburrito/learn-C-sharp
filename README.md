@@ -5,7 +5,7 @@
 2. [Variables and Operators](#variables-and-operators)
 3. [Arrays, Strings, Lists](#arrays-strings-lists)
 4. [Making Programs Interactive](#making-programs-interactive)
-
+5. [Making Choices and Decisions](#making-choices-and-decisions)
 
 
 ---
@@ -145,6 +145,7 @@ Line 2: assign the string we want to split
 Line 3: we use the names var to call the Split() method
 The result: {"Peter", "John", "Andy", "", "David"} */
 ```
+
 ### Lists
 ```c#
 // Lists: Similar to Arrays, but elements can be added or removed at will.
@@ -181,7 +182,6 @@ userAgeList.Contains(51); // results as true
 
 // Clear()
 userAgeList.Clear(); // removes all elements from list
-
 ```
 
 ## Making Programs Interactive
@@ -244,11 +244,36 @@ Console.WriteLine("I am 5'9\" tall");
 // Output = I am 5'9" tall
 
 // Accepting User Input
+string userInput = Console.ReadLine();
 
-
+// If a user enters an int/number, like 20, it will default to a string "20"
+// To convert the string to an int:
+int newUserInput = Convert.ToInt32(userInput);
 ```
 
+### Putting it all together
+```c#
+string userName = "";
+int userAge = 0;
+int currentYear = 0;
 
+Console.Write("Please enter your name: ");
+userName = Console.ReadLine();
+Console.Write("Please enter your age: ");
+userAge = Convert.ToInt32(Console.ReadLine());
+Console.Write("Please enter the current year: ");
+currentYear = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Hello World! My name is {0} and I am {1} years old. I was born in {2}.", userName, userAge, currentYear - userAge);
+Console.Read();
+
+// Output = Hello World! My name is Rachael and I am 36 years old. I was born in 1988.
+```
+
+## Making Choices and Decisions
+```c#
+
+```
 
 ## Title
 ```c#
