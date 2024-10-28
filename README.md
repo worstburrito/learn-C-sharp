@@ -392,7 +392,11 @@ Console.Read();
 
 ### Foreach Loop
 ```c#
+char[] chars = { 'H', 'e', 'l', 'l', 'o' };
+foreach (char i in chars)
+    Console.WriteLine(i);
 
+Console.Read();
 ```
 
 ### While Loop
