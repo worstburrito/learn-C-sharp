@@ -6,6 +6,7 @@
 3. [Arrays, Strings, Lists](#arrays-strings-lists)
 4. [Making Programs Interactive](#making-programs-interactive)
 5. [Making Choices and Decisions](#making-choices-and-decisions)
+6. [Object Oriented Programming Part 1](#object-oriented-programming-part-1)
 
 
 ---
@@ -509,6 +510,26 @@ Attempted to divide by zero.
 
 
 
+## Object Oriented Programming Part 1
+```c#
+
+```
+### Writing our own class
+```c#
+
+```
+### Instantiating and Object
+```c#
+
+```
+### Static Keyword
+```c#
+
+```
+### Advanced Method Concepts
+```c#
+
+```
 ## Title
 ```c#
 
