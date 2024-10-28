@@ -307,13 +307,18 @@ else
 }
 
 Console.Read();
+```
 
-// Inline If
+### Inline If
+```c#
+
 // Syntax: condition ? value if condition is true : value if condition is false;
 3 > 2 ? 10 : 5;
 // Output = 10, since 3 is greater than 2
+```
 
-// Switch Statement
+### Switch Statement
+```c#
 /* Syntax:
 swtich (variable used for swtiching)
 {
@@ -356,7 +361,29 @@ switch (userGrade)
 }
 
 Console.Read();
+```
 
+### For Loop
+```c#
+/* Syntax:
+for (initial value; test condition; modification to value)
+{
+    // Do Some Task
+}  */
+
+// Example 1:
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);
+{
+
+ // Example 2:
+ int[] myNumbers = { 10, 20, 30, 40, 50 };
+
+ for (int i = 0; i < myNumbers.Length; i++)
+ {
+     Console.WriteLine(myNumbers[i]);
+ }
 
 ```
 
