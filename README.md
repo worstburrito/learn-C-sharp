@@ -431,7 +431,28 @@ do
 
 ### Jump Statements
 ```c#
+// Break: causes the program to prematurely exit the loop if a certain condition is met.
+int i = 0;
+for (i = 0; i < 5; i++)
+{
+    Console.WriteLine("i = {0}", i);
+    if (i == 2)
+        break;
+}
 
+Console.Read();
+
+// Continue: the rest of the loop after the keyword is skipped for that iteration.
+int i = 0;
+for (i = 0; i < 5; i++)
+{
+    Console.WriteLine("i = {0}", i);
+    if (i == 2)
+        continue;
+    Console.WriteLine("Iw ill not be printed if i=2.\n");
+}
+
+Console.Read();
 ```
 
 ### Exception Handling
