@@ -377,6 +377,8 @@ for (int i = 0; i < 5; i++)
     Console.WriteLine(i);
 {
 
+Console.Read();
+
  // Example 2:
  int[] myNumbers = { 10, 20, 30, 40, 50 };
 
@@ -384,6 +386,22 @@ for (int i = 0; i < 5; i++)
  {
      Console.WriteLine(myNumbers[i]);
  }
+
+Console.Read();
+```
+
+### Foreach Loop
+```c#
+
+```
+
+### While Loop
+```c#
+
+```
+
+### Do While
+```c#
 
 ```
 
