@@ -401,7 +401,20 @@ Console.Read();
 
 ### While Loop
 ```c#
+/* Syntax:
+while (condition is true)
+{
+    do A
+} */
 
+int counter = 5;
+while (counter > 0)
+{
+    Console.WriteLine("Counter = {0}", counter);
+    counter -= 1;
+}
+
+    Console.Read();
 ```
 
 ### Do While
