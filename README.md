@@ -457,7 +457,54 @@ Console.Read();
 
 ### Exception Handling
 ```c#
+/* Syntax:
+try
+{
+    do something
+}
 
+catch (type of error)
+{
+    do something else when error occurs
+}
+
+finally
+{
+    do this regardless of whether the try or catch condition is met
+}
+*/
+
+// Example 1:
+int numerator, denominator;
+
+Console.Write("Please enter the numerator: ");
+numerator = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Please enter the denominator: ");
+denominator = Convert.ToInt32(Console.ReadLine());
+
+try
+{
+    Console.WriteLine("The result is {0}.", numerator / denominator);
+}
+catch (Exception e)
+{ 
+    Console.WriteLine(e.Message);
+}
+finally
+{
+    Console.WriteLine("---- End of Error Handling Example ----");
+}
+
+Console.Read();
+
+/* Output if you enter 12 and 4:
+The result is 3.
+---- End of Error Handling Example ---- */
+
+/* Output if you enter 12 and 0:
+Attempted to divide by zero.
+---- End of Error Handling Example ---- */
 ```
 
 
