@@ -511,13 +511,49 @@ Attempted to divide by zero.
 
 
 ## Object Oriented Programming Part 1
-```c#
 
-```
 ### Writing our own class
 ```c#
+class Staff {
+    // Contents of the class
+    // Fields, properties, and methods
+}
 
+// Building Fields:
+class Staff
+{
+    // Fields:
+    private string nameOfStaff;
+    private const int hourlyRate = 30;
+    private int hWorked;
+}
+
+// Adding Properties:
+class Staff
+{
+    // Fields:
+    private string nameOfStaff;
+    private const int hourlyRate = 30;
+    private int hWorked;
+
+    // Properties:
+    public int HoursWorked
+    {
+        get
+        {
+            return hWorked;
+        }
+        set
+        {
+            if (value < 0)
+                hWorked = value;
+            else
+                hWorked = 0;
+        }
+    }
+}
 ```
+
 ### Instantiating and Object
 ```c#
 
