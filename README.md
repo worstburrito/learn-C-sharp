@@ -552,6 +552,28 @@ class Staff
         }
     }
 }
+
+// Auto-Implemented Properties
+
+// To declare an auto-implemented property, we write:
+public int HoursWorked { get; set; }
+
+// This is equivalent to:
+private int hWorked;
+public int HoursWorked
+{
+    get
+        {
+            return hWorked;
+        }
+    set
+        {
+            hWorked = value;
+        }
+}
+
+// Adding Methods:
+
 ```
 
 ### Instantiating and Object
